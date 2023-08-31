@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.koder-header {
+    background-color: rgb(143, 143, 224);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+
+    .koder-nav {
+        padding: 8px;
+
+        .koder-nav-item {
+            height: 50px;
+            width: 80px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 1px 1px 2px black;
+            color: white;
+            background-color: rgb(87, 87, 214);
+            font-size: large;
+            margin: 4px;
+        }
+
+        .koder-nav-item:hover {
+            box-shadow: 2px 2px 4px black;
+        }
+    }
+}
+
+.koder-main {
+    background-color: rgb(163, 163, 224);
+    height: 88.8vh;
+    display: flex;
+    padding: 15px;
+    
+
+
+    #left {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        padding: 14px 0 14px 14px;
+        margin: 4px;
+        overflow-y: auto;
+        
+        .editor{
+            width: 100%;
+            height: 100%;
+            outline: none;
+        }
+    }
+    .koder-bar{
+        width: 4px;
+        height: 100%;
+        background-color: rgb(87, 87, 214);
+        cursor: w-resize;
+    }
+    #right {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        padding: 14px 0 14px 14px;
+        margin: 4px;
+
+        .ifram{
+            width: 100%;
+            height: 100%;
+            white-space: pre;
+            overflow-y: auto;
+        }
+    }
+
+}
